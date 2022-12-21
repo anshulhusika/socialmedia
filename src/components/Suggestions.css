@@ -1,0 +1,11 @@
+
+.friend_suggestions{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    /* max-height: 90vh; */
+    /* overflow-y: auto; */
+}
+.friend_suggestions h3{
+    text-align: center;
+    font-size: 2rem;
+}

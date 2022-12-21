@@ -1,0 +1,70 @@
+.friendCard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    background-color: white;
+    margin-bottom: 0.6rem;
+    padding: 0.5rem 1rem;
+}
+
+
+.prof_image img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.friend_detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.2rem 0.8rem;
+}
+
+.friend_detail .frnd_name{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.friendCard .btns{
+    display: flex;
+}
+.friendCard .btns a{
+    text-decoration: none;
+    color: black;
+}
+.friendCard .btns button{
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.friendCard .unfriend:hover{
+    background-color: rgb(247, 87, 87);
+}
+.friendCard .to_message:hover{
+    background-color: rgb(119, 247, 87);
+}
+@media screen and (max-width: 967px) {
+    .friendCard .btns button{
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 0.5rem;
+        border: none;
+        cursor: pointer;
+        border: 2px solid white;
+    }
+    .friendCard .unfriend:hover{
+        background-color: rgb(247, 87, 87);
+    }
+    .friendCard .to_message:hover{
+        background-color: rgb(119, 247, 87);
+    }
+    
+  } 

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+/*
+body{
+color : #0C2D48;
+#2E8BC0
+#B1D4E0
+#145DA0
+}
+
+*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(233, 233, 233);
+}
+
+/* *****************************  SIGNUP PAGE ****************************** */
+
+.signup h3{
+   font-size: 2.4rem;
+   font-weight: 500;
+   letter-spacing: 0.2rem;
+}
+
+.signup{
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.signup form,.inputDetails{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.inputDetails input, .inputDetails button{
+    width: 80%;
+    height: 4rem;
+    margin: 1rem ;
+    font-size: 1.6rem; 
+}
+.inputDetails input{
+    border: 1px solid grey;
+    padding-left:1rem;
+}
+.inputDetails input:focus{
+    outline: 1px solid rgb(104, 104, 104);
+}
+
+.inputDetails button{
+    border: 1px solid grey;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    background-color: #ef8f00;
+}
+.inputDetails button:hover{
+    background-color: rgb(248, 247, 247);
+}
+.inputDetails button:active{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.switch{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.allposts_wrapper{
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.messages{
+    width: 40%;
+}
+
+.toggle_friends{
+    margin: 1.6rem;
+}
+
+.toggle_friends span{
+   margin: 1rem;
+   font-size: 2rem;
+   text-transform: uppercase;
+   color: #ef8f00;
+   font-weight: 700;
+   cursor: pointer;
+}
+.toggle_friends .active_toggle{
+   border-bottom: 2px solid #ef8f00;
+}
+
+#show2{
+    display: none;
+}
+ @media screen and (max-width: 967px) {
+
+    #hide1,#hide2{
+        display: none;
+    }
+
+    #root .project{
+        display: flex;
+        justify-content: center;
+    }
+    .allposts_wrapper{
+        width: 75%;
+    }
+    #show1,#show2{
+        width: 80%;
+    }
+    .friends_page_wrapper{
+        display: grid;
+        place-items: center;
+    }
+    #show1 h3,#show2 h3{
+        font-weight: 500;
+    }
+    .signup{
+        width: 80%;
+    }
+  } 
+
+  @media screen and (max-width: 627px) {
+
+    .allposts_wrapper{
+        width: 90%;
+    }
+    #show1,#show2{
+        width: 90%;
+        padding: 0.4rem;
+    }
+    .signup{
+        width: 98%;
+        padding: 0.5rem;
+    }
+    .inputDetails input, .inputDetails button{
+        width: 92%;
+        font-size: 1.2rem; 
+    }
+  } 
+  @media screen and (max-width: 527px) {
+
+    .allposts_wrapper{
+        width: 100%;
+    }
+    #show1,#show2{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 340px) {
+
+    .toggle_friends span{
+        font-size: 1.2rem;
+    }
+    .toggle_friends {
+        margin: 1rem 0rem;
+    }
+  }

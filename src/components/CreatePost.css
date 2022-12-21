@@ -1,0 +1,45 @@
+.createpost{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 1rem;
+    background-color: rgb(255 255 255);
+    border: 1px solid #dddcdc;
+    box-shadow: 1px 3px 3px rgb(190, 190, 190);
+}
+.post{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.post p{
+    font-size: 2rem;
+}
+.post button{
+    width: 7rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    background-color: #15e602;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+.post button:hover{
+    transform: scale(1.03);
+}
+.post button:active{
+    border: 1px solid rgb(1, 121, 1);
+}
+.createpost input{
+    margin-top: 1rem;
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    padding: 0.3rem;
+    padding-left: 1rem;
+}
+ button[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+}

@@ -1,0 +1,55 @@
+
+.user_img img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user_img{
+    align-self: flex-start;
+
+
+}
+.user_info{
+    display: flex;
+    flex-direction: column;
+}
+.user_info .username{
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: left;
+}
+.user_request{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+.actionbtns button{
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0.3rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.actionbtns button:hover{
+    transform: scale(1.1);
+}
+.actionbtns button:active{
+    border: 2px solid black;
+}
+.actionbtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#addfriend{
+    background-color: #15e602;
+    color: white;
+}
+#remove:hover{
+background-color: tomato;
+}

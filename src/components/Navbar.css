@@ -1,0 +1,132 @@
+#navbar{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    height: 5rem;
+    background-color: #ef8f00; 
+    box-shadow: rgba(126, 140, 151, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#navbar div,#navbar span{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+#navbar span{
+    color: white;
+}
+
+#navbar .active i{
+    
+    border-bottom:2px solid white;
+    padding-bottom: 0.2rem;
+
+}
+.to_friends_page{
+    display: none;
+}
+
+.pages ul{
+    display: flex;
+    list-style: none;
+}
+.pages ul li{
+    margin: 0 3rem;
+}
+.pages ul li a{
+    text-decoration: none;
+}
+.pages ul li i{
+    display: flex;
+    list-style: none;
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: white;
+}
+
+#search{
+    outline: none;
+    border: none;
+    height: 3rem;
+    font-size: 1.6rem;
+    width: 80%;
+}
+.search{
+    max-width: 25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 0.5rem;
+}
+.search i{
+    color: black;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+#searchresult{
+    position: fixed;
+    top: 5rem;
+    right: 0;
+    background-color: white;
+    width: 30rem;
+    padding: 0.5rem;
+    display: none;
+}
+#searchresult .user{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-items: center;
+    background-color: #e1e1e1;
+    margin-bottom: 0.5rem;
+}
+#searchresult .user button{
+    padding: 0.5rem;
+    background-color: #ef8f00;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#searchresult .user button:active{
+    background-color: #ac6803;
+}
+.close i{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 967px) {
+    #navbar .logo{
+        display: none;
+    }
+    .to_friends_page{
+        display: inline;
+    }
+  }
+  @media screen and (max-width: 641px) {
+    #navbar {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 1rem 0;
+    }
+    #navbar .search{
+        margin: 1rem 0;
+        width: 90%;
+        max-width: 90%;
+        border-radius: 5px;
+    }
+    
+  }
+  @media screen and (max-width: 541px) {
+
+      .pages ul li{
+        margin: 0 auto;
+    }
+    .pages {
+        width: 100%;
+    }
+    .pages ul li i{
+        font-size: 1.8rem;
+    }
+  }

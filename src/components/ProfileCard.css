@@ -1,0 +1,60 @@
+.user_profile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.profile_img img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    transition: all 300ms ease;
+    border: 1px solid grey;
+    object-fit:contain;
+}
+.profile_img {
+    position: relative;
+    margin: 1rem;
+}
+.changeimg{
+    position: absolute;
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 300ms ease;
+    padding: 1rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.changeimg:hover{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+.changeimg i{
+   color: white;
+   font-size: 2rem;
+   cursor: pointer;
+}
+
+.profile_img:hover img{
+    opacity: 0.8;
+}
+.profile_name{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+}
+.changeimg i input{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+ }
+ #changeProfileImg{
+     display: none;
+ }

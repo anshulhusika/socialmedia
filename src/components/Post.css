@@ -1,0 +1,122 @@
+.post_wrapper{
+    width: 100%;
+    padding: 0.3rem;
+    margin-top: 3rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    box-shadow: rgba(126, 140, 151, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.post_image{
+    width: 100%;
+    border-bottom: 2px solid rgb(192, 192, 192);
+}
+.user_details{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding-bottom: 1rem;
+    padding: 1rem;
+}
+.user_details .u_img{
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+.user_details img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid grey;
+    object-fit: cover;
+}
+.user_details p{
+    width: 80%;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.caption{
+    padding: 0.5rem;
+    font-size: 1.6rem ;
+}
+.post_details{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border-top: 1px solid rgb(175, 175, 175);
+}
+.post_details div{
+    font-size: 1.4rem;
+}
+.likebtn i{
+    color:  #ef8f00;
+    font-size: 2rem;
+}
+.likebtn {
+    cursor: pointer;
+}
+.post_action{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+.post_action div{
+    padding: 0.5rem;
+    font-size: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.commentbtn input{
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+}
+.commentbtn{
+    border-left: 1px solid rgb(192, 192, 192);
+    outline: none;
+}
+
+.commentbtn i{
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.commentbox{
+    max-height: 10rem;
+    overflow-y: auto;
+    background-color: #f8f8f8;
+    border: 1px ridge rgb(214, 214, 214);
+    margin-top: 1rem;
+}
+@media screen and (max-width: 700px) {
+
+    .post_action div{
+        font-size: 1.6rem;
+        width: 45%;
+    
+    }
+    .commentbtn input{
+        width: 90%;
+        padding-left: 0.5rem;
+    }
+  }
+  @media screen and (max-width: 300px) {
+
+    .post_action{
+        flex-direction: column;
+    }
+    .post_action div{
+        width: 90%;
+        margin: 0.5rem;
+    }
+    .commentbtn{
+        border-left: none;
+        border-top: 1px solid rgb(192, 192, 192);
+    }
+    .commentbtn input{
+        width: auto;
+        max-width: 100%;
+    }
+  }

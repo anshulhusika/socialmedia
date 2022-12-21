@@ -1,0 +1,39 @@
+
+.user_suggested img{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    object-fit: cover;
+    align-self: flex-start;
+}
+.user_suggested{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgb(204, 204, 204);
+}
+.user_info .username{
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.user_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actionbtn{
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    background-color: #ef8f00;
+    padding: 0.8rem 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
